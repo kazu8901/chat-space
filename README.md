@@ -14,7 +14,7 @@
 ## groupsテーブル
 |Column|type|Options|
 |------|----|-------|
-|groupname|string|null: false|
+|name|string|null: false|
 |adduser|string|foreign_key: true|
 ### Association
 - has_many :posts
