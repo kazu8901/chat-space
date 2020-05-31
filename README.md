@@ -15,7 +15,6 @@
 |Column|type|Options|
 |------|----|-------|
 |name|string|null: false|
-|adduser|string|foreign_key: true|
 ### Association
 - has_many :posts
 - has_many :users_groups
