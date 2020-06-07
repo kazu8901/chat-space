@@ -1,0 +1,47 @@
+.chat-main
+  .chat-main__group-info
+    .group
+      .group__name
+        ss
+        .member
+          Member：aa
+      .group__edit
+        = link_to "#", class:"btn" do
+          Edit
+  .chat-main__message-list
+    .name
+      %p 
+        aa
+      .name__date
+        %p 
+          2020/6/4(wed) 20:00:00
+    .message
+      %p 
+        あああああああ
+    .name
+      %p 
+        aa
+      .name__date
+        %p
+          2020/6/4(wed) 20:00:00
+    .message
+      %p
+        いいいいいいい
+    .name
+      %p
+        aa
+      .name__date
+        %p
+          2020/6/4(wed) 20:00:00
+    .message
+      %p
+        ううううううう
+
+  .chat-main__message-form
+    %form.text-box
+      %input.text-box__form{:placeholder => "type a message", :type => "text", :value => ""}/
+      %label{class: "text-box__icon"}
+        = icon("fa", "image")
+        %input.text-box__icon__image(type="file")/
+    .send-btn
+      %input.btn(type="submit" value="Send")/
