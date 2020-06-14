@@ -117,6 +117,7 @@
   }
 
   &__message-list {
+    overflow-x: scroll;
     height: calc(100vh - 190px);
     background-color: $fa;
     padding:35px 0 0 40px;
@@ -146,7 +147,12 @@
     height: 90px;
     background-color: #d2d2d2;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    
+    .new_message {
+      display: flex;
+    }
 
     .text-box {
       display: flex;
