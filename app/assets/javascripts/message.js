@@ -54,6 +54,7 @@ $(function() {
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
+      $('.btn').prop('disabled', false);
     });
   })
 
