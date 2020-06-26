@@ -31,7 +31,7 @@ $(function() {
         </div>`
       return html;
     };
-  }
+  };
 
   $('#new_message').on('submit', function(e){
     e.preventDefault();
@@ -49,13 +49,14 @@ $(function() {
       var html = buildHTML(data);
       $('.messages').append(html);
       $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
-      $('.btn').prop('disabled', false);
       $('form')[0].reset();
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
+    })
+    .always(function(){
       $('.btn').prop('disabled', false);
     });
-  })
+  });
 
 });
