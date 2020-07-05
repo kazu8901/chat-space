@@ -6,9 +6,9 @@ $(function() {
        `<div class="contents" data-message-id=${message.id}>
           <div class="name">
             ${message.user_name}
-          </div>
-          <div class="name__date">
-            ${message.created_at}
+            <div class="name__date">
+              ${message.created_at}
+            </div>
           </div>
           <div class="message">
             <p>
@@ -23,9 +23,9 @@ $(function() {
        `<div class="contents" data-message-id=${message.id}>
           <div class="name">
             ${message.user_name}
-          </div>
-          <div class="name__date">
-            ${message.created_at}
+            <div class="name__date">
+              ${message.created_at}
+            </div>
           </div>
           <div class="message">
             <p>

@@ -123,23 +123,25 @@
     padding:35px 0 0 40px;
 
     .name {
-      font-weight: bold;
-      font-size: 16px;
-      color: #333333;
       display: flex;
-
-        &__date {
-          margin-left: 10px;
-          font-size: 12px;
-          color: $gray;
-          font-weight: normal;
-        }
-    }
-      .message {
-        padding:12px 0 46px 0;
-        font-size: 14px;
-        color: #434A54;
+      &__user {
+        font-weight: bold;
+        font-size: 16px;
+        color: #333333;
       }
+      &__date {
+        margin-left: 10px;
+        font-size: 12px;
+        color: $gray;
+        font-weight: normal;
+      }
+    }
+
+    .message {
+      padding:12px 0 46px 0;
+      font-size: 14px;
+      color: #434A54;
+    }
   }
 
   &__message-form {
